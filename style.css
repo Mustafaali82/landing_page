@@ -1,0 +1,700 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0C0C0C;
+}
+
+header {
+    padding: 50px 150px 50px 150px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.logo ul {
+    display: flex;
+    margin-left: 60px;
+}
+
+.logo ul li {
+    list-style-type: none;
+    padding-left: 40px;
+    color: #B2B2B1;
+    font-family: 'Satoshi', sans-serif;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.signup {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.signup li {
+    list-style-type: none;
+    padding-left: 40px;
+    color: #B2B2B1;
+    font-family: 'Satoshi', sans-serif;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.signup button {
+    width: 180px;
+    height: 50px;
+    border-radius: 50px;
+    color: white;
+    background-color: black;
+    border: 2px solid #BBF245;
+    margin-left: 50px;
+    font-family: 'Satoshi', sans-serif;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+/* Mobile Menu */
+
+.humburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    display: none;
+}
+
+.line {
+    width: 30px;
+    height: 2px;
+    background-color: white;
+}
+
+/* Home */
+
+.home {
+    color: white;
+    display: flex;
+    padding: 50px 150px 50px 150px;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.home_heading h1 {
+    font-size: 70px;
+    font-weight: 900;
+    font-family: 'Satoshi';
+    line-height: 79px;
+}
+
+.home_heading p {
+    font-size: 18px;
+    font-family: 'Satoshi';
+    color: #B2B2B1;
+    width: 500px;
+    padding-top: 20px;
+    line-height: 30px;
+}
+
+.home_heading button {
+    padding: 10px 50px 10px 50px;
+    color: black;
+    border-radius: 50px;
+    background-color: #BBF245;
+    border: 1px;
+    font-size: 20px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Satoshi';
+}
+
+.home_heading button img {
+    position: relative;
+    top: 5px;
+}
+
+.home_heading h1 span {
+    color: #BBF245;
+}
+
+.client {
+    display: flex;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.clients-box h2 {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Satoshi';
+}
+
+.clients-box span {
+    font-family: 'Satoshi';
+    font-size: 20px;
+}
+
+/* about section */
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    gap: 150px;
+    padding: 50px 150px 50px 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about_title h1 {
+    font-size: 65px;
+    color: white;
+    font-family: 'Satoshi';
+    line-height: 83px;
+}
+
+.about_title p {
+    font-size: 18px;
+    color: #B2B2B1;
+    font-family: "satoshi";
+    line-height: 30px;
+    padding-top: 20px;
+}
+
+.accordion {
+    background: linear-gradient(45deg, #0C0C0C, #bbf2450a);
+    color: #ffffff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 19px;
+    transition: 0.4s;
+    margin-top: 19px;
+    font-family: "satoshi";
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+
+.accordion:after {
+    content: '\002B';
+    color: #BBF245;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+    color: white;
+}
+
+.panel {
+    padding: 0 18px;
+    background: linear-gradient(45deg, #0C0C0C, #bbf2450a);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    color: white;
+}
+
+.panel p {
+    color: white;
+    font-size: 17px;
+}
+
+.about_title h1 span {
+    color: #BBF245;
+}
+
+/* Budget */
+
+.budget {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0 40px 0;
+    background-image: url("images/budget1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.budget h1 {
+    font-size: 60px;
+    font-family: "satoshi";
+    color: #b2b2b11c;
+    line-height: 14px;
+}
+
+.budget h2 {
+    font-size: 40px;
+    font-family: "satoshi";
+    text-align: center;
+}
+
+.budget p {
+    color: #B2B2B1;
+    font-family: "satoshi";
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.budget-box-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background: linear-gradient(90deg, #bbf2450a, #0C0C0C);
+    border-radius: 18px;
+    gap: 20px;
+
+}
+
+
+.budget-box-child h3 {
+    text-align: left;
+    font-family: "satoshi";
+}
+
+.budget-box-child p {
+    padding-top: 5px;
+    text-align: left;
+    padding-bottom: 0;
+}
+
+.budget-box button {
+    padding: 10px 50px 10px 50px;
+    color: black;
+    border-radius: 50px;
+    background-color: #BBF245;
+    border: 1px;
+    font-size: 20px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Satoshi';
+}
+
+.budget-box button img {
+    position: relative;
+    top: 5px;
+}
+
+.budget-box-child-2 {
+    background: linear-gradient(90deg, #bbf24500, #0c0c0c00);
+}
+
+/* Our Partner */
+
+.partner {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0 50px 0;
+    background-image: url("images/budget1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    background-position: bottom;
+}
+
+.partner h1 {
+    font-size: 100px;
+    font-family: "satoshi";
+    color: #b2b2b11c;
+    line-height: 0px;
+    margin-top: 50px;
+}
+
+.partner h2 {
+    font-size: 80px;
+    font-family: "satoshi";
+    line-height: 90px;
+}
+
+.image-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 70px;
+    object-fit: cover;
+    margin-top: 50px;
+}
+
+/* Feature Section */
+
+.feature {
+    color: white;
+    padding: 40px 100px 40px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.feature h1 {
+    font-size: 100px;
+    font-family: "satoshi";
+    color: #b2b2b11c;
+    line-height: 0px;
+    margin-top: 50px;
+}
+
+.feature h2 {
+    font-size: 80px;
+    font-family: "satoshi";
+    line-height: 90px;
+}
+
+.feature-box {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.feature-box-child {
+    background: linear-gradient(100deg, #bbf2450e, #0C0C0C);
+    padding: 30px;
+}
+
+.feature-box-child h3 {
+    font-family: "satoshi";
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.feature-box-child p {
+    font-size: 18px;
+    font-family: "satoshi";
+    line-height: 30px;
+    padding-bottom: 10px;
+}
+
+.feature-box-child a {
+    color: #BBF245;
+    font-family: "satoshi";
+    text-decoration: none;
+}
+
+.feature-box-child a img {
+    position: relative;
+    top: 2px;
+    left: 5px;
+}
+
+/* Card */
+
+.card {
+    padding: 40px 100px 40px 100px;
+}
+
+.card-box {
+    background-image: url(images/card.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 150px;
+}
+
+.card-box-heading h2 {
+    font-size: 70px;
+    font-family: "satoshi";
+    color: white;
+    line-height: 80px;
+    padding-bottom: 20px;
+}
+
+.card-box-heading p {
+    font-size: 18px;
+    font-family: "satoshi";
+    color: #B2B2B1;
+    width: 400px;
+    line-height: 30px;
+}
+
+.card-box-heading button {
+    width: 180px;
+    height: 50px;
+    border-radius: 50px;
+    color: rgb(0, 0, 0);
+    background-color: #BBF245;
+    border: 2px solid #BBF245;
+    font-family: 'Satoshi', sans-serif;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Foote styling */
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 40px 100px 40px 100px;
+    font-family: "satoshi";
+    color: #B2B2B1;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.links h3 {
+    font-size: 30px;
+    color: white;
+}
+
+.links span {
+    padding-top: 10px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.subscribe {
+    display: flex;
+    margin-top: 20px;
+}
+
+.subscribe input {
+    padding: 21px;
+    background-color: #181818;
+    border: 1px;
+    border-radius: 50px;
+    width: 100%;
+    outline: none;
+    color: #B2B2B1;
+}
+
+.subscribe button {
+    padding: 14px;
+    border-radius: 50px;
+    position: absolute;
+    right: 105px;
+    background-color: #BBF245;
+    font-family: "satoshi";
+    font-size: 16px;
+    border: 1px;
+    margin-top: 3px;
+    font-weight: 500;
+}
+
+::placeholder {
+    color: #B2B2B1;
+}
+
+.copyright {
+    color: white;
+    font-family: "satoshi";
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright p {
+    border-top: 1px solid #b2b2b124;
+    width: 800px;
+    padding: 40px 100px;
+}
+
+/* https://we.tl/t-kNltT5n5Kn*/
+
+/* Mobile Media Screen */
+
+@media screen and (max-width: 767px) {
+    .humburger {
+        display: flex;
+        gap: 6px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    #ul {
+        display: none;
+    }
+
+    .signup button {
+        display: none;
+    }
+
+    .home {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .clients-box span {
+        text-align: center;
+    }
+
+    .client {
+        text-align: center;
+    }
+
+    .home_heading p {
+        width: auto;
+    }
+
+    .image img {
+
+        width: 100%;
+    }
+
+    .logo {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .logo ul {
+        margin-left: 11px;
+        position: absolute;
+        top: 65px;
+        left: -7px;
+        background-color: #bbf245;
+        color: black;
+        padding: 5px;
+        width: 99%;
+        /* text-align: center; */
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo ul li {
+        padding: 19px;
+        color: black;
+    }
+
+    .home {
+        margin-top: 60px;
+    }
+
+    .about {
+        padding: 20px;
+        flex-direction: column-reverse;
+        background-size: cover;
+        background-position: top;
+        gap: 61px;
+    }
+
+    .about_image img {
+        width: 100%;
+    }
+
+    .partner h1 {
+        font-size: 60px;
+        line-height: 0;
+    }
+
+    .partner h2 {
+        font-size: 50px;
+        line-height: 70px;
+    }
+
+    .image-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .budget {
+        padding: 10px;
+    }
+
+    .feature-box {
+        flex-direction: column;
+    }
+
+    .feature {
+        padding: 10px;
+    }
+
+    .feature h1 {
+        font-size: 80px;
+    }
+
+    .feature h2 {
+        font-size: 70px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .card-box {
+        display: flex;
+        flex-direction: column-reverse;
+        background-repeat: unset;
+        gap: 30px;
+    }
+
+    .card-box-heading{
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+
+    .card-box-img {
+        margin-left: 30px;
+    }
+
+    .footer{
+        padding: 20px;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .subscribe input{
+        width: 300px;
+    }
+
+    .subscribe button{
+        right: 200px
+    }
+}      
