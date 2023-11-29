@@ -697,4 +697,91 @@ nav {
     .subscribe button{
         right: 200px
     }
-}      
+} 
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    header{
+        padding: 31px;
+    }
+
+    .signup  button{
+        display: none;
+    }
+
+    .home{
+        padding: 31px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home_heading p {
+        width: 700px;
+    }
+
+    .client {
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .about {
+        padding: 31px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image img{
+        width: 100%;
+    }
+
+    .partner{
+        padding: 31px;
+        background-image: none;
+    }
+
+    .image-box {
+        gap: 30px;
+    }
+
+    .feature{
+        padding: 31px;
+    }
+
+
+    .feature-box-child p {
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    .card{
+        padding: 31px;
+    }
+
+    .card-box{
+        gap: 0;
+    }
+
+    .card-box-heading {
+        padding: 20px;
+    }
+
+    .card-box-heading p{
+        width: auto;
+    }
+
+    .card-box-heading h2{
+        font-size: 50px;
+    }
+
+    .footer{
+        padding: 23px;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px;
+    }
+
+    .subscribe button{
+        right: 321px;
+    }
+}
